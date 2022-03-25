@@ -1,0 +1,82 @@
+// Wrapper
+
+@use '../base/settings' as *;
+@use '../utilities/mixins' as *;
+@use '../utilities/functions' as *;
+@use '../base/variables' as *;
+
+.pagehome-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    .pagehome-image-container {
+        background-image: url('../../images/starwarlarge.png');
+        border: solid skyblue .5rem;
+        position: relative;
+        display: flex;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .pagehome-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .pagehome-left-img{
+            transform: perspective($persp) rotateY(0deg);
+            transform-origin: 0% 0%;        
+        }
+
+        .pagehome-left-img:hover{
+            animation: openleft 3s linear ;
+        }
+
+        @keyframes openleft {
+            0%{
+                transform: perspective($persp) rotateY(0deg);
+            }
+            50%{
+                transform: perspective($persp) rotateY(20deg);
+            }
+            100%{
+                transform: perspective($persp) rotateY(0deg);
+            } 
+        }
+
+        .pagehome-right-img {
+            transform: perspective($persp) rotateY(0deg);
+            transform-origin: 100% 0%;
+        }
+
+        .pagehome-right-img:hover{
+            animation: openright 2.5s linear ;
+        }
+
+        @keyframes openright {
+            0%{
+                transform: perspective($persp) rotateY(0deg);
+            }
+            50%{
+                transform: perspective($persp) rotateY(-20deg);
+            }
+            100%{
+                transform: perspective($persp) rotateY(0deg);
+            } 
+        }
+    }
+    
+    .pagehome-title {
+        position: absolute;
+        top: 30%;
+        font-size: 1.5em; 
+        
+    }
+}

@@ -1,0 +1,9 @@
+// Body
+
+@use '../base/settings' as *;
+@use '../base/variables' as *;
+
+body {
+    background-color: $dark;
+    color: $textColor;
+}

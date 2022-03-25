@@ -1,0 +1,31 @@
+// Footer
+
+@use '../base/settings' as *;
+@use '../utilities/mixins' as *;
+@use '../base/variables' as *;
+
+.footer-down {
+    padding: $section-padding;
+    border-top: 1px dotted darken($grey, 20);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+    img {
+        visibility: visible;
+        width: 83px;
+        height: 37px; 
+        margin-right: 8px;
+    }
+    p {
+        @include flatten;
+    }
+    @media (min-width: $tablet){
+        img {
+            display: none;
+            height: 0;
+            visibility: hidden;
+            overflow: hidden;
+        }
+    }
+}

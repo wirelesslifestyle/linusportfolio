@@ -1,0 +1,69 @@
+// Single project page
+
+@use '../base/variables' as *;
+@use '../base/settings' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+.pagesubwork-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: em(16);
+
+    h1 {
+        text-align: center;
+        font-family: 'Courgette', cursive;
+        letter-spacing: em(4);
+        margin: em(16) 0;
+    }
+    .pagesubwork-tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    svg {
+        margin: em(16);
+    }
+
+    .pagesubwork-res {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        .pagesubwork-res-icon:hover {
+            background-color: $highlightColor;
+        }
+    }
+
+    @include mq($tablet){
+        .pagesubwork-tech {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+
+    @include mq($desktop){
+        max-width: em(800);
+
+    }
+    
+}

@@ -1,0 +1,46 @@
+// Movies
+
+@use '../base/variables' as *;
+@use '../base/settings' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+.pagework-container {
+    //padding: em(12);
+
+    .swiper-button-next, .swiper-button-prev {
+        top:30%;
+    }
+
+    .swiper-slide img {
+        max-width: 75%;
+        height: auto;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .pagework-technology svg{
+        margin: em(16);
+    }
+
+    .pagework-moreinfo {
+        margin-bottom: em(16);
+
+        a{
+            font-weight: bold;
+        }
+        
+    }
+
+    @include mq($tablet){
+
+        .swiper-slide img {
+            max-width: 100%;
+
+        }
+    }
+
+
+}
+

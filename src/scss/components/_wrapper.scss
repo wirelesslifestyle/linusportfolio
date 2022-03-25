@@ -1,0 +1,23 @@
+// Wrapper
+
+@use '../base/settings' as *;
+@use '../utilities/mixins' as *;
+@use '../utilities/functions' as *;
+@use '../base/variables' as *;
+
+.wrapper {
+    max-width: em(840);
+    margin: 0 auto;
+    width: 100vw;
+    overflow-x: hidden;
+    // border-radius: 10px;
+    background-color: $dark;
+    
+
+    @include mq($desktopWide){
+        margin: em(8) auto;
+        // border: 3px solid $textColor;
+        overflow-x: hidden;
+    }
+
+}

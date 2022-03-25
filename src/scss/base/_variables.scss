@@ -1,0 +1,16 @@
+// Variables
+@use 'settings' as *;
+// Colors
+$textColor: $light;
+$featureColor: #0362fc;
+$highlightColor: #fc6f03;
+$favColor: white;
+
+// Breakpoints
+$tablet: 600px;
+$desktop: 820px;
+$desktopWide: 1200px;
+$desktopFull: 1600px;
+
+//perspective of transition
+$persp: 500px;

@@ -1,0 +1,20 @@
+// App Style Settings
+
+@use '../utilities/functions' as *;
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;700&family=Rowdies:wght@300;400;700&display=swap");
+// Colors
+$dark: #1c1c1c;
+$light: #fcfcfc;
+$yellow: #f7df1c;
+$grey: #e1e1e1;
+$red: #d75b5b;
+$cdark: #373b69;
+
+// Type
+$bodyFont: 'Roboto Slab', serif;
+$headingFont: 'Alatsi', sans-serif;
+$handwriting: 'Courgette', cursive;
+$heavy: 'Rowdies', cursive;
+
+// Layout
+$section-padding: em(16) em(20);
