@@ -31,7 +31,7 @@ const projectInfo = [
         desingimgalt:'mockup of movie app showing intial design',
         highlights: 'Collaborated with classmates to develop this movie app.',
         takeaway: 'This project was a great learning experience for myself and my teammates. One of the biggest challenges of this project was using local storage and state to save favourite movie. ',
-        github: 'https://github.com/wirelesslifestyle/wirelesslifestyle',
+        github: 'https://github.com/wirelesslifestyle/reactmoviea',
         livesite: 'https://linusluo.com/movie-owl',
         id: 0
     },
@@ -51,7 +51,7 @@ const projectInfo = [
         desingimgalt:'The design plan for the java design game',
         highlights: ['The first is data storage, including all componets and their status.', 'The second is interactive. This is the first project writing react page. I added user control and time control in this project. ' ],
         takeaway: 'Data storage is the most challenge part of this part. Need to consider the effective area of the data.',
-        github: '',
+        github: 'https://github.com/wirelesslifestyle/javagame',
         livesite: 'https://linusluo.com/matchgame/',
         id: 1
     },
@@ -92,7 +92,7 @@ const projectInfo = [
         desingimgalt:'Mockup of initial portfolio website.',
         highlights:['Responsive in Mobile device'] ,
         takeaway: 'My objective weas to create a user-friendly experience on my website while highlighting my skills as a developer with sample, one of which being the site itself.',
-        github: '',
+        github: 'https://github.com/wirelesslifestyle/linusportfolio',
         livesite: 'https://linusluo.com/portfolio',
         id: 3
     },
